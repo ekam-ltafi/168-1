@@ -70,7 +70,7 @@ def line(event):
 def draw(direction , oldx , oldy , newx , newy ):
     color = color_dropdown.get()
     if(direction == 'r'):
-     draw_rectangle = canvas.create_rectangle(oldx, oldry , newx , newy , width = 3 , fill = color  )
+     draw_rectangle = canvas.create_rectangle(oldx, oldy , newx , newy , width = 3 , fill = color  )
      
     if(direction == 'c'):
         draw_circle = canvas.create_oval(oldx , oldy , newx , newy , width = 3  , fill = color)
